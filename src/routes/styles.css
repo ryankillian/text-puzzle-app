@@ -1,0 +1,56 @@
+@import '@fontsource/ibm-plex-sans/300.css';
+
+:root {
+	--font-family-base: 'IBM Plex Sans', sans-serif;
+	--font-weight-base: 300;
+
+	/* Custom color overrides */
+	--pico-color-sand-850: #272622;
+
+	/* Override Pico's default colors */
+	--pico-color-text: var(--pico-color-sand-150); /* Sets default text color */
+	--pico-color-background: var(--pico-color-sand-850); /* Sets default background */
+	--pico-color-primary: var(--pico-color-sand-850); /* Use for primary actions */
+	--pico-color-secondary: var(--pico-color-sand-850); /* Use for secondary actions */
+
+	--pico-color-link: var(--pico-color-sand-350); /* Normal link color */
+	--pico-color-link-hover: var(--pico-color-sand-250); /* Hovered link color */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: var(--font-family-base);
+	background-color: var(--pico-color-background);
+	color: var(--pico-color-text);
+	height: 100%; /* Ensure the html and body take up the full height of the viewport */
+	margin: 0;
+}
+
+/* The container that holds all content (header, main, footer) */
+.app {
+	width: 100%; /* Default to 100% on small screens */
+	max-width: 1200px; /* Max width for large screens */
+	margin: 0 auto; /* Center the content */
+	padding: 1rem; /* Add some padding */
+}
+
+/* For larger screens, apply 50% width */
+@media (min-width: 768px) {
+	.app {
+		width: 50%;
+	}
+}
+
+a {
+	color: var(--pico-color-link); /* Override link color */
+}
+
+a:hover {
+	color: var(--pico-color-link-hover); /* Override link hover color */
+}
