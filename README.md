@@ -7,5 +7,4 @@ The website is deployed to [https://text-puzzle-app.vercel.app/](https://text-pu
 ## Features
 
 - Rearrange text lines into the correct order.
-- Built with SvelteKit.
 - Drag-and-drop functionality using the `swapy` library.
